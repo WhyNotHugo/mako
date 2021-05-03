@@ -27,7 +27,7 @@ glib = dependency('glib-2.0')
 gobject = dependency('gobject-2.0')
 realtime = cc.find_library('rt')
 wayland_client = dependency('wayland-client')
-wayland_protos = dependency('wayland-protocols', version: '>=1.14')
+wayland_protos = dependency('wayland-protocols', version: '>=1.21')
 
 epoll = dependency('', required: false)
 if (not cc.has_function('timerfd_create', prefix: '#include <sys/timerfd.h>') or
